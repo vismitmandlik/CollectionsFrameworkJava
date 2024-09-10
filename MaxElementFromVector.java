@@ -1,26 +1,41 @@
-import java.util.Vector;
-// import java.util.Collections;
+import java.util.ArrayList;
+import java.util.HashSet;
+// import java.util.Comparator;
 
 public class MaxElementFromVector {
     public static void main(String[] args) {
-        Vector<Integer> v = new Vector<Integer>();
+        ArrayList<Integer> a1 = new ArrayList<Integer>();
+        HashSet<Integer> s = new HashSet<Integer>();
 
-        v.add(68);
-        v.add(61);
-        v.add(48);
-        v.add(93);
-        v.add(73);
 
-        System.out.println(v);
-        int max= v.get(0);
 
-        for(Integer I : v){
-            if(I > max){
-                max = I;
-            } 
-        }
+        a1.add(68);
+        a1.add(61);
+        a1.add(48);
+        a1.add(93);
+        a1.add(73);
 
-        System.out.println(max);
+        
+
+        ArrayList<Integer> a2 = new ArrayList<Integer>();
+
+        a2.add(68);
+        a2.add(61);
+        
+        a1.retainAll(a2);
+        System.out.println(a1);
+
+
+        // System.out.println(v);
+        // int max= v.get(0);
+
+        // for(Integer I : a1){
+        //     if(a2.contains(a1) > max){
+        //         max = I;
+        //     } 
+        // }
+
+        // System.out.println(max);
 
     }
 }
