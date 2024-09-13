@@ -5,7 +5,6 @@ import java.util.HashSet;
 public class MaxElementFromVector {
     public static void main(String[] args) {
         ArrayList<Integer> a1 = new ArrayList<Integer>();
-        HashSet<Integer> s = new HashSet<Integer>();
 
 
 
